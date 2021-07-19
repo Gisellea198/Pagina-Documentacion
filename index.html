@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Conpatible" content="IE-edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  </head>
+    <body>
+
+      <nav id="navbar">
+        <header>Bulma CSS</header>
+            <ul>
+                <li><a class="nav-link" href="#Introducción_a_Bulma">Introducción a Bulma</a></li>
+                <li><a class="nav-link" href="#Primeros_Pasos">Primeros Pasos</a></li>
+                <li><a class="nav-link" href="#Columnas_Bulma">Columnas Bulma</a></li>
+                <li><a class="nav-link" href="#Elementos">Elementos</a></li>
+                <li><a class="nav-link" href="#Componentes_Bulma">Componentes Bulma</a></li>
+                <li><a class="nav-link" href="#Formularios_Bulma">Formularios Bulma</a></li>
+                <li><a class="nav-link" href="#Ayudantes">Ayudantes</a></li>
+              <li><a class="nav-link" href="#Referencias_Bulma">Referencias Bulma</a></li>
+            </ul>
+      </nav>
+    <main id="main-doc">
+        
+      <section class="main-section" id="Introducción_a_Bulma">
+        <header>Introducción a Bulma</header>
+          <div id="caja">
+            <p>Bulma es un marco CSS popular con un sistema simple de cuadrícula flexbox. Se diferencia de otros marcos al adoptar un enfoque más ligero y sin incluir ningún JavaScript, dejando esa decisión totalmente en manos del desarrollador.</p>
+            <p>El marco Bulma es una solución CSS gratuita basada en el diseño de Flexbox. Con Bulma, la amplia gama de funciones integradas significa un tiempo de respuesta más rápido y menos escritura de código CSS.</p>
+            <p>Bulma también es completamente de código abierto, lo que significa que el código fuente original de Bulma está disponible gratuitamente para su descarga; no hay límite en lo que usted (y la creciente comunidad de Bulma) puede extender su funcionalidad.</p>
+            <p>¿Por qué utilizar Bulma?</p>
+            <p>Estas son algunas de las otras ventajas que creemos que podrían hacer de Bulma CSS su nuevo marco favorito.</p>
+            <ul>
+              <li><strong>Bulma es fácil de aprender:</strong> Sobre todo, Bulma está diseñado para ayudar a simplificar el proceso de codificación, por lo que tiene sentido que Bulma tenga la facilidad de uso como máxima prioridad.</li>
+              <li><strong>Bulma es modular:</strong> Bulma no es un marco de todo o nada; es modular, y eso significa que puedes usar las piezas que quieras y dejar el resto fuera.</li>
+              <li><strong>Bulma es solo CSS:</strong> Bulma es un framework exclusivamente CSS; la única salida es un archivo CSS (bulma.css). Y si desea aprovechar la modularidad antes mencionada para personalizar sus variables, puede descargar los archivos fuente individuales .sass. De lo contrario, Bulma funciona bien como una solución plug-and-play.</li>
+              <li><strong>Bulma responde:</strong> Puede ser difícil intentar convertir un sitio diseñado para escritorio para usarlo en un dispositivo móvil, pero con Bulma, no es realmente un problema. Bulma es un marco CSS para dispositivos móviles que ofrece una capacidad de respuesta óptima para el sitio.</li>
+              <li><strong>Bulma está bien documentada:</strong> El sitio de Bulma proporciona documentación completa para ayudarlo a aprovechar al máximo el marco CSS de Bulma. Los temas incluyen modificadores, diseños, columnas y componentes.</li>
+              <li><strong>Bulma es rica en componentes:</strong> Bulma viene con casi todos los componentes que necesita para darle a su sitio una apariencia funcional y nítida, incluidos menús desplegables, barras de navegación, paneles, pestañas y tablas.</li>
+              <li><strong>Bulma es compatible:</strong> No todo el mundo utiliza Chrome, por lo que cuando diseñe un sitio, querrá asegurarse de que funcionará bien con la gama completa de navegadores web disponibles.</li>
+              <li><strong>Bulma mejora constantemente:</strong> Bulma puede ser relativamente nueva, pero no lo sabrías mirando su historial de actualizaciones. Se están agregando nuevas funciones de manera casi constante y las versiones más nuevas están eliminando rápidamente cualquier error u otros problemas que los usuarios puedan encontrar.</li>
+            </ul>
+          </div>
+      </section>
+        <br>
+    
+      <section class="main-section" id="Primeros_Pasos">
+        <header>Primeros Pasos</header>
+          <div id="caja">
+                  <p>Bulma es una biblioteca CSS . Esto significa que proporciona clases de CSS para ayudarlo a diseñar su código HTML. Para usar Bulma, puede usar el <strong>.css</strong> archivo precompilado o instalar los <strong>.sass</strong> archivos para que pueda personalizarlo según sus necesidades.</p>
+                  <h2>Opción 1. Use un CDN</h2>
+                  <p>Puede importar el archivo CSS directamente desde <strong>jsDelivr</strong>:</p>
+                  <p><strong>CSS @import</strong></p>
+                  <code>@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";</code>
+                  <p><strong>HTML &lt;enlace&gt;</strong></p> 
+                  <p>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"&gt;</p>
+                  <br><p>La versión <strong>RTL</strong> también está disponible:</p>
+                  <p><strong>CSS @import</strong></p>
+                  <code>@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css";</code>
+                  <p><strong>HTML &lt;enlace&gt;</strong></p>
+                  <p>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css"&gt;</p>
+                  <h2>Opción 2. Descarga la versión de Github</h2>
+                  <p>Puede obtener la última versión de Bulma <strong>.zip</strong> desde GitHub:</p>
+                 
+            <div class="buttons is-centered">
+              <button class="button is-primary">Descargar v0.9.3</button>
+            </div>
+              <h2>ó</h2>
+                  <h2>Obtén la biblioteca Bulma <strong>Sass</strong></h2>
+                  <p>Una colección de <strong>.sass</strong> archivos para construir tu propia versión de Bulma.</p>
+                  <h2>Opción 1. Instale el paquete NPM</h2>
+                  <p>Bulma está disponible a través de <strong>npm</strong>:</p>
+                  <p><strong>npm</strong></p>
+                  <code>npm install bulma</code>
+                  <p><strong>hilo</strong></p>
+                  <code>yarn add bulma</code>
+                  <p>Bulma también está disponible a través de <strong>cdnjs </strong>.</p>
+                  <h2>Opción 2. Clonar el repositorio de GitHub</h2>
+                  <p>Bulma está disponible en <strong>GitHub</strong>.</p>
+                  <p><strong>SSH</strong></p>
+                  <code>git clone git@github.com:jgthms/bulma.git</code>
+                  <p><strong>HTTPS</strong></p>
+                  <code>git clone https://github.com/jgthms/bulma.git</code>
+                  <p><strong>CLI de GitHub</strong></p>
+                  <code>gh repo clone jgthms/bulma</code>
+                  <h2>Requisitos del código</h2>
+                  <p>Para que Bulma funcione correctamente, debe hacer que su página web sea receptiva.</p>
+                  <strong>Utilice el tipo de documento HTML5</strong>
+                <p>&lt;!DOCTYPE html&gt;</p>
+                  <strong>Agregue la meta etiqueta de ventana gráfica receptiva</strong>
+                  <p>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+          </div>
+      </section>
+      <br>
+    
+      <section class="main-section" id="Columnas_Bulma">
+        <header>Columnas Bulma</header>
+        <div id="caja">
+            <h2>Columnas Básicas</h2>
+              <p>Construir un diseño de columnas con Bulma es muy simple:</p>
+              <ol>
+                <li>Agregar un <strong>columns</strong> contenedor.</li>
+                <li>Agrega tantos <strong>column</strong> elementos como quieras.</li>
+              </ol>
+              <p>Cada columna tendrá el mismo ancho, sin importar el número de columnas.</p>
+              <br>
+              <div class="columns">
+                <div class="column has-background-primary">
+                  First column
+                </div>
+                <div class="column has-background-success">
+                  Second column
+                </div>
+                <div class="column has-background-danger">
+                  Third column
+                </div>
+                <div class="column has-background-info">
+                  Fourth column
+                </div>
+              </div>
+              <code>
+                &lt;div class="columns">
+                &nbsp;&nbsp;&lt;div class="column has-background-primary">First column&lt;/div>
+                &nbsp;&nbsp;&lt;div class="column has-background-success">Second column&lt;/div>
+                &nbsp;&nbsp;&lt;div class="column has-background-danger">Third column&lt;/div>
+                &nbsp;&nbsp;&lt;div class="column has-background-info">Fourth column&lt;/div>
+                &lt;/div>
+              </code>
+               
+              <h2>
+                Tamaños de columna
+              </h2>
+              <p>
+                Si desea cambiar el tamaño de una sola columna, puede usar una de las siguientes clases:
+              </p>
+              <code>
+                is-three-quarters
+                is-two-thirds
+                is-half
+                is-one-third
+                is-one-quarter
+                is-full
+              </code>
+              <p>
+                Las otras columnas llenarán el espacio restante automáticamente. Ahora también puede usar los siguientes múltiplos de 20%:
+              </p>
+              <code>
+                is-four-fifths
+                is-three-fifths
+                is-two-fifths
+                is-one-fifth
+              </code><br>
+
+                <div class="columns">
+                  <div class="column is-four-fifths has-background-link">is-four-fifths</div>
+                  <div class="column has-background-light">Auto</div>
+                  <div class="column has-background-light">Auto</div>
+                </div><br>
+    
+                <div class="columns">
+                  <div class="column is-three-quarters has-background-link">is-three-quarters</div>
+                  <div class="column has-background-light">Auto</div>
+                  <div class="column has-background-light">Auto</div>
+                </div><br>
+    
+                <div class="columns">
+                  <div class="column is-two-thirds has-background-link">is-two-thirds</div>
+                  <div class="column has-background-light">Auto</div>
+                  <div class="column has-background-light">Auto</div>
+                </div><br>
+    
+    <div class="columns">
+      <div class="column is-three-fifths has-background-link">is-three-fifths</div>
+      <div class="column column has-background-light">Auto</div>
+      <div class="column column has-background-light">Auto</div>
+    </div><br>
+    
+    <div class="columns">
+      <div class="column is-half has-background-link">is-half</div>
+      <div class="column column has-background-light">Auto</div>
+      <div class="column column has-background-light">Auto</div>
+    </div><br>
+    
+    <div class="columns"> 
+    <div class="column is-two-fifths has-background-link">is-two-fifths</div>
+      <div class="column column has-background-light">Auto</div>
+      <div class="column column has-background-light">Auto</div>
+    </div><br>
+    
+    <div class="columns">
+      <div class="column is-one-third has-background-link">is-one-third</div>
+      <div class="column column has-background-light">Auto</div>
+      <div class="column column has-background-light">Auto</div>
+    </div><br>
+    
+    <div class="columns">
+      <div class="column is-one-quarter has-background-link">is-one-quarter</div>
+      <div class="column column has-background-light">Auto</div>
+      <div class="column column has-background-light">Auto</div>
+    </div><br>
+    
+    <div class="columns">
+      <div class="column is-one-fifth has-background-link">is-one-fifth</div>
+      <div class="column column has-background-light">Auto</div>
+      <div class="column has-background-light">Auto</div>
+    </div>
+    <br>
+            <p><strong>Sistema de 12 columnas</strong></p>
+              <p>Como la cuadrícula se puede dividir en 12 columnas, hay clases de tamaño para cada división:</p>
+              <code>
+                is-1
+                is-2
+                is-3
+                is-4
+                is-5
+                is-6
+                is-7
+                is-8
+                is-8
+                is-9
+                is-10
+                is-11
+                is-12
+              </code><br>
+
+    <div class="columns">
+      <div class="column is-1 has-background-link">is-1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div> 
+    </div><br>
+    
+    <div class="columns">
+      <div class="column is-2 has-background-link">is-2</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      </div><br>
+    
+    <div class="columns">
+      <div class="column is-3 has-background-link">is-3</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+    </div><br>
+    
+    <div class="columns">
+      <div class="column is-4 has-background-link">is-4</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+    </div><br>
+    
+    <div class="columns">
+      <div class="column is-5 has-background-link">is-5</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      </div><br>
+    
+    <div class="columns"> 
+    <div class="column is-6 has-background-link">is-6</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      </div><br>
+    
+    <div class="columns">
+      <div class="column is-7 has-background-link">is-7</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      </div><br>
+    
+    <div class="columns">
+      <div class="column is-8 has-background-link">is-8</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      </div><br>
+    
+    <div class="columns">
+      <div class="column is-9 has-background-link">is-9</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      </div><br>
+      
+      <div class="columns">
+      <div class="column is-10 has-background-link">is-10</div>
+      <div class="column has-background-light">1</div>
+      <div class="column has-background-light">1</div>
+      </div><br>
+                
+     <div class="columns">
+      <div class="column is-11 has-background-link">is-11</div>
+      <div class="column has-background-light">1</div>
+      </div><br>
+                
+    <div class="columns">
+      <div class="column is-12 has-background-link">is-12</div>
+      </div><br>
+
+    </div>
+      </section>
+      <br>
+    
+        <section class="main-section" id="Elementos">
+          <header>Elementos</header>
+          <div id="caja">
+            <h2>Caja</h2>
+              <p>
+                El <strong>box</strong> elemento es un contenedor simple con un fondo blanco, algo de relleno y una sombra de caja.
+              </p>
+      <code>
+      &lt;div class="box">
+      &nbsp;&nbsp;Estoy en una caja
+      &lt;/div>
+      </code>
+      <div class="box">Estoy en una caja.</div>
+              <p>
+                Debido a que actúa como un contenedor, puede incluir fácilmente otros componentes, como elementos de formulario:
+              </p>
+    <code>
+    &lt;form class="box">
+    &nbsp;&nbsp;&lt;div class="field">
+    &nbsp;&nbsp;&nbsp;&lt;label class="label">Email&lt;/label>
+    &nbsp;&nbsp;&nbsp;&lt;div class="control">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="input" type="email" placeholder="e.g. alex@example.com">
+    &nbsp;&nbsp;&nbsp;&lt;/div>
+    &nbsp;&nbsp;&lt;/div>
+    
+     &nbsp;&nbsp;&lt;div class="field">
+     &nbsp;&nbsp;&nbsp;&lt;label class="label">Password&lt;/label>
+     &nbsp;&nbsp;&nbsp;&lt;div class="control">
+     &nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="input" type="password" placeholder="********">
+    &nbsp;&nbsp;&nbsp;&lt;/div>
+    &nbsp;&nbsp;&lt;/div>
+    
+    &nbsp;&nbsp;&lt;button class="button is-primary">Sign in&lt;/button>
+    &lt;/form>
+            </code>
+    <br>
+              <form class="box">
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control">
+                    <input class="input" type="email" placeholder="e.g. alex@example.com">
+                  </div>
+                </div>
+              
+                <div class="field">
+                  <label class="label">Password</label>
+                  <div class="control">
+                    <input class="input" type="password" placeholder="********">
+                  </div>
+                </div>
+              
+                <button class="button is-primary">Sign in</button>
+              </form>
+              <h2>Botones</h2>
+              <p>
+                El botón es un elemento esencial de cualquier diseño. Está destinado a verse y comportarse como un elemento interactivo de su página.
+              </p>
+              <p>
+                Ejemplo:
+              </p>
+              <button class="button">
+                Botón
+              </button>
+              <p>
+                La <strong>button</strong> clase se puede utilizar en:
+              </p>
+              <ol>
+                <li>
+                  <strong>a</strong> enlaces de anclaje.
+                </li>
+                <li>
+                  <strong>button</strong> botones de formulario.
+                </li>
+                <li>
+                  <strong>input type="submit"</strong> enviar insumos.
+                </li>
+                <li>
+                  <strong>input type="reset"</strong> restablecer entradas.
+                </li>
+              </ol>
+              <p>
+                Ejemplo:
+              </p>
+              <a class="button">Anclar</a>
+              <button class="button">Botón</button>
+              <input class="button" type="submit" value="Eviar Entrada">
+              <input class="button" type="reset" value="Restablecer Entrada">
+              <h2>Colores de los botones</h2>
+              <p>
+                El botón está disponible en todos los diferentes colores definidos por el <strong>$colors</strong> mapa <strong>Sass</strong>.
+              </p>
+              <p>Ejemplo:</p>
+              <div class="buttons">
+              <button class="button is-light">Light</button>
+              <button class="button is-dark">Dark</button>
+              <button class="button is-black">Black</button>
+              <button class="button is-text">Text</button>
+              <button class="button is-ghost">Ghost</button>
+              </div>
+    
+              <div class="buttons">
+                <button class="button is-primary">Primary</button>
+                <button class="button is-link">Link</button>
+                <button class="button is-info">Info</button>
+                <button class="button is-success">Success</button>
+                <button class="button is-warning">Warning</button>
+                <button class="button is-danger">Danger</button>
+              </div>
+            <p><strong>Botones Redondeados</strong>
+              </p>
+            <div class="buttons">
+              <button class="button is-rounded">Rounded</button>
+              <button class="button is-primary is-rounded">Rounded</button>
+              <button class="button is-link is-rounded">Rounded</button>
+              <button class="button is-info is-rounded">Rounded</button>
+            </div>
+              <div class="buttons">
+                <button class="button is-success is-rounded">Rounded</button>
+                <button class="button is-danger is-rounded">Rounded</button>
+              </div>
+              <h2>
+                Imágenes
+              </h2>
+              <p><strong>Imágenes cuadradas fijas</strong></p>
+              <p>
+                Hay 7 dimensiones para elegir, útiles para los avatares:
+              </p>
+                <img src="https://drive.google.com/uc?export=view&id=1w-9FigijNsqAmON-x9Hu4dhFPKIrRCD7">
+            <p><strong>Imágenes receptivas con proporciones</strong></p>
+              <p>
+                Si no conoce las dimensiones exactas pero conoce la relación, puede utilizar uno de los 16 modificadores de relación, que incluyen relaciones de aspecto comunes en la fotografía fija:
+              </p>
+              <code>
+                image is-square (480x480)
+                image is-1by1 (480x480)
+                image is-5by4 (600x480)
+                image is-4by3 (640x480)
+                image is-3by2 (480x320)
+                image is-5by3 (800x480)
+                image is-16by9 (640x360)
+                image is-2by1 (640x320)
+                image is-3by1 (480x640)
+                image is-4by5 (480x600)
+                image is-3by4 (480x640)
+                image is-2by3 (320x480)
+                image is-3by5 (480x800)
+                image is-9by16 (360x640)
+                image is-1by2 (320x640)
+                image is-1by3 (240x720)
+              </code>
+          </div>
+        </section>
+         <br>
+        
+        <section class="main-section" id="Componentes_Bulma">
+          <header>Componentes Bulma</header>
+          <div id="caja">
+            <h2>
+                Barra de navegación
+              </h2>
+              <p>
+                Una barra de navegación horizontal receptiva que puede admitir imágenes, enlaces, botones y menús desplegables.
+              </p>
+              <p>El <strong>navbar</strong> componente es una barra de navegación horizontal receptiva y versátil con la siguiente estructura:
+              <ol>
+                <li>
+                  <strong>navbar</strong> el contenedor principal.
+                </li>
+                <li>
+                  <strong>navbar-bran</strong> del lado izquierdo , siempre visible , que suele contener el logo y opcionalmente algunos enlaces o iconos.
+                </li>
+                <li>
+                  <strong>navbar-burger</strong>el icono de hamburguesa , que alterna el menú de la barra de navegación en los dispositivos táctiles.
+                </li>
+                <li>
+                  <strong>navbar-menu</strong> el lado derecho , oculto en dispositivos táctiles, visible en el escritorio.
+                </li>
+                <li>
+                  <strong>navbar-start</strong> la parte izquierda del menú, que aparece junto a la marca de la barra de navegación en el escritorio.
+                </li>
+                <li>
+                  <strong>navbar-end</strong>  la parte derecha del menú, que aparece al final de la barra de navegación.
+                </li>
+                <li>
+                  <strong>navbar-item</strong> cada elemento de la barra de navegación, que puede ser <strong>a</strong> un <strong>div</strong>.
+                </li>
+                <li>
+                  <stron>navbar-link</strong> un enlace como hermano de un menú desplegable, con una flecha.
+                </li>
+                <li>
+                  <strong>navbar-dropdown</strong> el menú desplegable, que puede incluir elementos de la barra de navegación y divisores.
+                </li>
+                <li>
+                  <strong>navbar-divider</strong> una línea horizontal para separar los elementos de la barra de navegación.
+                </li>
+              </ol>
+              <h2>Barra de navegación básica</h2>
+              <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu">
+                  <div class="navbar-start">
+                    <a class="navbar-item">
+                      Home
+                    </a>
+              
+                    <a class="navbar-item">
+                      Documentation
+                    </a>
+              
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link">
+                        More
+                      </a>
+              
+                      <div class="navbar-dropdown">
+                        <a class="navbar-item">
+                          About
+                        </a>
+                        <a class="navbar-item">
+                          Jobs
+                        </a>
+                        <a class="navbar-item">
+                          Contact
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item">
+                          Report an issue
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="buttons">
+                        <a class="button is-primary">
+                          <strong>Sign up</strong>
+                        </a>
+                        <a class="button is-light">
+                          Log in
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+    <code>
+      &lt;nav class="navbar" role="navigation" aria-label="main navigation">
+      &nbsp;&lt;div class="navbar-brand">
+    &nbsp;&nbsp;&nbsp;&lt;a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span aria-hidden="true">&lt;/span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span aria-hidden="true">&lt;/span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;span aria-hidden="true">&lt;/span>
+    &nbsp;&nbsp;&nbsp;&lt;/a>
+    &nbsp;&lt;/div>
+              
+    &nbsp;&lt;div id="navbarBasicExample" class="navbar-menu">
+    &nbsp;&nbsp;&nbsp;&lt;div class="navbar-start">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="navbar-item">Home&lt;/a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="navbar-item">Documentation&lt;/a>
+              
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="navbar-item has-dropdown is-hoverable">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="navbar-link">More&lt;/a>
+              
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="navbar-dropdown">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="navbar-item">About&lt;/a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="navbar-item">Jobs&lt;/a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="navbar-item">Contact&lt;/a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr class="navbar-divider">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="navbar-item">Report an issue&lt;/a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div>
+    &nbsp;&nbsp;&nbsp;&lt;/div>
+              
+    &nbsp;&nbsp;&nbsp;&lt;div class="navbar-end">
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="navbar-item">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="buttons">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="button is-primary">&lt;strong>Sign up&lt;/strong>&lt;/a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="button is-light">Log in&lt;/a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div>
+    &nbsp;&nbsp;&nbsp;&lt;/div>
+    &nbsp;&nbsp;&lt;/div>
+    &lt;/nav>
+            </code>
+              <h2>Barra de navegación transparente</h2>
+              <p>
+                Para integrar perfectamente la barra de navegación en cualquier contexto visual, puede agregar el <strong>is-transparent</strong> modificador en el <strong>navbar</strong>componente. Esto eliminará cualquier fondo activo o flotante de los elementos de la barra de navegación.
+              </p>
+              <nav class="navbar is-transparent">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="https://bulma.io">
+                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                  </a>
+                  <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              
+                <div id="navbarExampleTransparentExample" class="navbar-menu">
+                  <div class="navbar-start">
+                    <a class="navbar-item" href="https://bulma.io/">
+                      Home
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link" href="https://bulma.io/documentation/overview/start/">
+                        Docs
+                      </a>
+                      <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+                          Overview
+                        </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/overview/modifiers/">
+                          Modifiers
+                        </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
+                          Columns
+                        </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
+                          Layout
+                        </a>
+                        <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
+                          Form
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
+                          Elements
+                        </a>
+                        <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
+                          Components
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="field is-grouped">
+                        <p class="control">
+                          <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet" data-social-target="https://bulma.io" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                            <span class="icon">
+                              <i class="fab fa-twitter"></i>
+                            </span>
+                            <span>
+                              Tweet
+                            </span>
+                          </a>
+                        </p>
+                        <p class="control">
+                          <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.9.3/bulma-0.9.3.zip">
+                            <span class="icon">
+                              <i class="fas fa-download"></i>
+                            </span>
+                            <span>Download</span>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+             <h2>Barra de Navegación (Colores)</h2>
+              <p>
+                Puede cambiar el color de fondo del navbarusando uno de los 9 modificadores de color:
+              </p>
+              <ol>
+                <li>
+                  <strong>is-primary</strong> 
+                </li>
+                <li>
+                  <strong>is-link</strong> 
+                </li>
+                <li>
+                  <strong>is-info</strong> 
+                </li>
+                <li>
+                  <strong>is-success</strong> 
+                </li>
+                <li>
+                  <strong>is-warning</strong> 
+                </li>
+                <li>
+                  <strong>is-danger</strong> 
+                </li>
+                <li>
+                  <strong>is-black</strong> 
+                </li>
+                <li>
+                  <strong>is-dark</strong> 
+                </li>
+                <li>
+                  <strong>is-light</strong> 
+                </li>
+                <li>
+                  <strong>is-white</strong> 
+                </li>
+              </ol>
+       <img src="https://drive.google.com/uc?export=view&id=101iQ15LLcfrYNU_AoMiJ8SXkUde2Iesd">
+       <img src="https://drive.google.com/uc?export=view&id=1Fuah-y9dh6Ybq23cH5KH_JGSN6VLavIP">
+          </div>
+    </section>
+        <br>
+        
+        <section class="main-section" id="Formularios_Bulma">
+          <header>Formularios Bulma</header>
+          <div id="caja">
+            <p>
+                Bulma admite los siguientes elementos de formulario HTML nativo: 
+              </p>
+                <code>
+                  &lt;form> 
+                  &lt;button> 
+                  &lt;input> 
+                  &lt;textarea> 
+                  &lt;label>.
+                </code>
+                <p>
+                  Se admiten las siguientes clases de CSS:
+                </p>
+                <code>
+                  label
+                  input
+                  textarea
+                  select
+                  checkbox
+                  radio
+                  button
+                  help
+                </code>
+                <p>
+                  Para mantener el diseño equilibrado de manera uniforme, Bulma proporciona un <strong>control</strong> contenedor muy útil con el que puede envolver los controles de formulario. Cuando combine varios controles en un formulario , use la <strong>field</strong> clase como contenedor para mantener el espaciado consistente.
+                </p>
+                <p>            
+                  Ejemplo de formulario completo
+                </p>
+                <div class="field">
+                  <label class="label">Name</label>
+                  <div class="control">
+                    <input class="input" type="text" placeholder="Text input">
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Username</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-user"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </div>
+                  <p class="help is-success">This username is available</p>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Email</label>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                    <span class="icon is-small is-left">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                      <i class="fas fa-exclamation-triangle"></i>
+                    </span>
+                  </div>
+                  <p class="help is-danger">This email is invalid</p>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Subject</label>
+                  <div class="control">
+                    <div class="select">
+                      <select>
+                        <option>Select dropdown</option>
+                        <option>With options</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <label class="label">Message</label>
+                  <div class="control">
+                    <textarea class="textarea" placeholder="Textarea"></textarea>
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <div class="control">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="field">
+                  <div class="control">
+                    <label class="radio">
+                      <input type="radio" name="question">
+                      Yes
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="question">
+                      No
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="field is-grouped">
+                  <div class="control">
+                    <button class="button is-link">Submit</button>
+                  </div>
+                  <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                  </div>
+                </div>
+    <img src="https://drive.google.com/uc?export=view&id=1oq1x2ATY6v4tvbMpki4GZ4nfyPpORwXt">
+                <h2>Formulario Horizontal</h2>
+                <p>
+                  Si desea un control de formulario horizontal , use el <strong>is-horinzontal</strong> modificador en el <strong>field</strong> contenedor, en el que incluye:
+                </p>
+            <ol>
+              <li><strong>field-label</strong> para la etiqueta lateral.</li>
+              <li><strong>field-body</strong> para el contenedor <strong>input / select / textarea</strong></li>
+              <li>Puede usar <strong>is-grouped</strong> o <strong>has-addons</strong> para los elementos secundarios.</li>
+            </ol>
+                
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">From</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left">
+                        <input class="input" type="text" placeholder="Name">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-user"></i>
+                        </span>
+                      </p>
+                    </div>
+                    <div class="field">
+                      <p class="control is-expanded has-icons-left has-icons-right">
+                        <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                          <i class="fas fa-check"></i>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field is-horizontal">
+                  <div class="field-label"></div>
+                  <div class="field-body">
+                    <div class="field is-expanded">
+                      <div class="field has-addons">
+                        <p class="control">
+                          <a class="button is-static">
+                            +44
+                          </a>
+                        </p>
+                        <p class="control is-expanded">
+                          <input class="input" type="tel" placeholder="Your phone number">
+                        </p>
+                      </div>
+                      <p class="help">Do not enter the first zero</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Department</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field is-narrow">
+                      <div class="control">
+                        <div class="select is-fullwidth">
+                          <select>
+                            <option>Business development</option>
+                            <option>Marketing</option>
+                            <option>Sales</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field is-horizontal">
+                  <div class="field-label">
+                    <label class="label">Already a member?</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field is-narrow">
+                      <div class="control">
+                        <label class="radio">
+                          <input type="radio" name="member">
+                          Yes
+                        </label>
+                        <label class="radio">
+                          <input type="radio" name="member">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Subject</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
+                      </div>
+                      <p class="help is-danger">
+                        This field is required
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field is-horizontal">
+                  <div class="field-label is-normal">
+                    <label class="label">Question</label>
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="field is-horizontal">
+                  <div class="field-label">
+                    <!-- Left empty for spacing -->
+                  </div>
+                  <div class="field-body">
+                    <div class="field">
+                      <div class="control">
+                        <button class="button is-primary">
+                          Send message
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <h3>
+                Checkbox
+              </h3>
+              <p>
+                La <strong>checkbox</strong> clase es una envoltura simple alrededor del <strong>&lt;input type="checkbox"></strong> elemento HTML. No tiene un estilo intencional para preservar la compatibilidad entre navegadores y la experiencia del usuario.
+              </p>
+              <label class="checkbox">
+                <input type="checkbox">
+                Recuerdame
+              </label>
+              <br>
+              <label class="checkbox">
+                <input type="checkbox">
+                Acepto los <a href="#">Términos y Condiciones</a>
+              </label>
+              <br>
+              <label class="checkbox">
+                <input type="checkbox">
+                Guardar mis preferencias
+                </label>
+                </div>
+        </section>
+          <br>
+ 
+            <section class="main-section" id="Ayudantes">
+              <header>Ayudantes</header>
+              <div id="caja">
+                <h2>Color del Texto</h2>
+                  <p>Puede configurar cualquier elemento en uno de los 10 colores o 9 tonos de gris:</p>
+    <img src="https://drive.google.com/uc?export=view&id=1lFHrcHA2sgGBqJAJRz_5lYh1YrL4qIH8"><br>
+    <img src="https://drive.google.com/uc?export=view&id=1hME0rFLQlfXH7RCfj-_a0o-1g5RtkO1e"><br>
+    <img src="https://drive.google.com/uc?export=view&id=1wGnfJBCfl_dER8v9dZDbocndFyxNeRM0"><br>
+    <h2>Color de fondo<h2>
+      <p>Puede configurar cualquier elemento en uno de los 10 colores o 9 tonos de gris:</p>
+    <img src="https://drive.google.com/uc?export=view&id=1Mvw-udKF1VcvncQkj0HZkvFFKgyCdAsB"><br>
+    <img src="https://drive.google.com/uc?export=view&id=1oRoy6p-9-Bno1ld_oy-wzLF75ht5QHsa"><br>
+    <img src="https://drive.google.com/uc?export=view&id=1jWuVIPi5CDqUO2gWNY3zF3dyk1Ap2u9-">
+    <h2>Tipografía<h2>
+      <p><strong>Tamaño</strong></p>
+                  <p>Hay 7 tamaños para elegir:</p>
+    <img src="https://drive.google.com/uc?export=view&id=144QMl3R-ygPRWRX-F8dTiqIRl67SlZDh">
+    <p><strong>Alineación<strong></p>
+                  <p>
+                    Puede alinear el texto con el uso de uno de los 4 ayudantes de alineación:
+                  </p>
+    <img src="https://drive.google.com/uc?export=view&id=1k0e7Zl5wTM28RPhECqz8SzjvGC_R8etE">
+    <p><strong>Peso del Texto</strong></p>
+                  <p>
+                    Puede transformar el peso del texto con el uso de uno de los 5 ayudantes de peso del texto:
+                  </p>
+    <img src="https://drive.google.com/uc?export=view&id=1XzmXLZ-SB1GbT4xfOTHD7klag-x9ra-H">
+      <p><strong>Familia de fuentes</strong></p>
+                  <p>
+                    Puede cambiar la familia de fuentes con el uso de uno de los 5 ayudantes de familias de fuentes:
+                  </p>
+    <img src="https://drive.google.com/uc?export=view&id=1rtnikTeUFTtoGKZpCcNUMZTA8i4TDc4a">
+    </div>
+            </section>
+          <br>
+        
+        <section class="main-section" id="Referencias_Bulma">
+          <header>Referencias Bulma</header>
+          <div id="caja">
+            <ul>
+              <li>
+                Toda la documentación de esta página está extraída de
+                <a
+                  href="https://bulma.io/documentation/"
+                  target="_blank"
+                  >Bulma.io</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section><br>
+      </main>
+    </body>
+    </html>
